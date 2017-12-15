@@ -4,3 +4,4 @@ python:
   - "3.5"
 
 script: python -m unittest
+travis encrypt "devops-team-otus:uKA8qCCozMFWseLZ5KgMNElL" --add notifications.slack -r asomir/play-with-travis
