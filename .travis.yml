@@ -1,7 +1,8 @@
 language: python
 python:
-  - "3.4"
-  - "3.5"
-
+- '3.4'
+- '3.5'
 script: python -m unittest
-travis encrypt "devops-team-otus:uKA8qCCozMFWseLZ5KgMNElL" --add notifications.slack -r asomir/play-with-travis
+notifications:
+  slack:
+    secure: IUEUaV8xUKSjoBSd2iyrbqOoVj+kHBRFJSjYNg64Cd5nRUmekFjXFr9HqyfjzbT8xB1zgeTwIPdeduJtVTUheQH5+tplWYa3HiVjMkaQa+oLUr5AOsO+grNyCEAiOwDilyOjgSt9I1czp2vgOfV4lMgbj3tIUj/K3+nvwF+UBDA5fzYsLJRZQY5/NB59iKwQmM4mdp95onZqBotsIoXgusKbT3WK7rvnnF8u16PVggyMIOiWScjKyLporSr0Q4gth8YqY6sOaRiMcS0bD6JWj0PUI/jTgCPwhVha/rV/5WrlnWtt1ojGnFyMUKA3OxiL9UAlqSy+nQ6QIJhdcb+3/eL5vfPKhPhojeonljMS0dq8AkYZF2M0ynWDmBLJ+5eTEuJTYfCawdAS6gtuhIpVdQaTHa0nqzGpyXBhSZhYteW6pL+uXO0rES3FuAbyRI4EZ6n51+qEieL4l0nboQ5ztieet0SudqPOoemdOucZhnnbLzQFudzUoRPW3BWVXz0efaWVdcdosS7HV51u8LgDJS14N0u1UgHAUF+A/HAlS5apsTU8asu4QZsWqHQ1bp7vsasOUV4gLj6aDGnfNfhDV+4rpMR8KwWY9PRQimhdJcwgHdFxsWtjunnxpqV3jrn2cPZLivzT2ayb4dL5uC9BXEwUwONUv1IhbWJgRpoBrok=
